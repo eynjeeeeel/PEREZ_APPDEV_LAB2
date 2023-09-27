@@ -1,0 +1,100 @@
+CRITICAL - 2023-09-14 00:09:21 --> Attempt to assign property "someColumn" on array
+in APPPATH\Controllers\MainController.php on line 31.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->update(' 2')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\3F2\\public\\index.php')
+CRITICAL - 2023-09-14 00:29:28 --> The route for "main" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('main')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\MainController.php(29): redirect('main', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->update('update', 'update', 'update', 'update', 'update', '2')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\3F2\\public\\index.php')
+CRITICAL - 2023-09-14 01:08:26 --> Undefined variable $d
+in APPPATH\Views\main.php on line 105.
+ 1 APPPATH\Views\main.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $d', 'C:\\laragon\\www\\3F2\\app\\Views\\main.php', 105)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\3F2\\app\\Views\\main.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('main', [], true)
+ 5 APPPATH\Controllers\MainController.php(57): view('main', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->test()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\3F2\\public\\index.php')
+CRITICAL - 2023-09-14 01:09:11 --> Undefined variable $d
+in APPPATH\Views\main.php on line 105.
+ 1 APPPATH\Views\main.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $d', 'C:\\laragon\\www\\3F2\\app\\Views\\main.php', 105)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\3F2\\app\\Views\\main.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('main', [], true)
+ 5 APPPATH\Controllers\MainController.php(60): view('main', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->test()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\3F2\\public\\index.php')
+CRITICAL - 2023-09-14 01:10:23 --> Undefined variable $d
+in APPPATH\Views\main.php on line 105.
+ 1 APPPATH\Views\main.php(105): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $d', 'C:\\laragon\\www\\3F2\\app\\Views\\main.php', 105)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\3F2\\app\\Views\\main.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('main', [], true)
+ 5 APPPATH\Controllers\MainController.php(64): view('main', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->test()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\3F2\\public\\index.php')
+CRITICAL - 2023-09-14 01:18:42 --> Undefined variable $d
+in APPPATH\Views\main.php on line 108.
+ 1 APPPATH\Views\main.php(108): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined variable $d', 'C:\\laragon\\www\\3F2\\app\\Views\\main.php', 108)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\3F2\\app\\Views\\main.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('main', [], true)
+ 5 APPPATH\Controllers\MainController.php(64): view('main', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->test()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\3F2\\public\\index.php')
+CRITICAL - 2023-09-14 11:08:23 --> Too few arguments to function App\Controllers\MainController::test(), 0 passed in C:\laragon\www\3F2\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\MainController.php on line 53.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->test()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\3F2\\public\\index.php')
+CRITICAL - 2023-09-14 11:08:47 --> Too few arguments to function App\Controllers\MainController::test(), 0 passed in C:\laragon\www\3F2\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\MainController.php on line 53.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->test()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\3F2\\public\\index.php')
+CRITICAL - 2023-09-14 12:10:12 --> Too few arguments to function App\Controllers\MainController::test(), 0 passed in C:\laragon\www\3F2\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\MainController.php on line 53.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->test()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\3F2\\public\\index.php')
+CRITICAL - 2023-09-14 12:15:50 --> Too few arguments to function App\Controllers\MainController::test(), 0 passed in C:\laragon\www\3F2\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\MainController.php on line 53.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->test()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\3F2\\public\\index.php')
+CRITICAL - 2023-09-14 12:15:55 --> Too few arguments to function App\Controllers\MainController::test(), 0 passed in C:\laragon\www\3F2\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\MainController.php on line 53.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->test()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\3F2\\public\\index.php')

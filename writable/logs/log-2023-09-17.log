@@ -1,0 +1,82 @@
+CRITICAL - 2023-09-17 00:50:13 --> Too few arguments to function App\Controllers\MainController::test(), 0 passed in C:\laragon\www\3F2\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\MainController.php on line 67.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->test()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\3F2\\public\\index.php')
+CRITICAL - 2023-09-17 01:01:30 --> The route for "main" cannot be found.
+in SYSTEMPATH\HTTP\RedirectResponse.php on line 60.
+ 1 SYSTEMPATH\HTTP\RedirectResponse.php(60): CodeIgniter\HTTP\Exceptions\HTTPException::forInvalidRedirectRoute('main')
+ 2 SYSTEMPATH\Common.php(878): CodeIgniter\HTTP\RedirectResponse->route(false)
+ 3 APPPATH\Controllers\MainController.php(37): redirect('main', [...])
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->update('35')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\3F2\\public\\index.php')
+CRITICAL - 2023-09-17 03:18:58 --> Deletes are not allowed unless they contain a "where" or "like" clause.
+in SYSTEMPATH\Database\BaseBuilder.php on line 2766.
+ 1 SYSTEMPATH\Model.php(445): CodeIgniter\Database\BaseBuilder->delete()
+ 2 SYSTEMPATH\BaseModel.php(1080): CodeIgniter\Model->doDelete(null, false)
+ 3 APPPATH\Controllers\MainController.php(25): CodeIgniter\BaseModel->delete()
+ 4 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->update('81')
+ 5 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\3F2\\public\\index.php')
+CRITICAL - 2023-09-17 03:58:12 --> syntax error, unexpected token "public"
+in APPPATH\Controllers\MainController.php on line 59.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\3F2\\app\\Controllers\\MainController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\MainController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\MainController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\MainController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\3F2\\public\\index.php')
+CRITICAL - 2023-09-17 03:58:21 --> syntax error, unexpected token "public"
+in APPPATH\Controllers\MainController.php on line 59.
+ 1 SYSTEMPATH\Autoloader\Autoloader.php(285): CodeIgniter\Autoloader\Autoloader->includeFile('C:\\laragon\\www\\3F2\\app\\Controllers\\MainController.php')
+ 2 SYSTEMPATH\Autoloader\Autoloader.php(263): CodeIgniter\Autoloader\Autoloader->loadInNamespace('App\\Controllers\\MainController')
+ 3 [internal function]: CodeIgniter\Autoloader\Autoloader->loadClass('App\\Controllers\\MainController')
+ 4 SYSTEMPATH\CodeIgniter.php(877): class_exists('\\App\\Controllers\\MainController', true)
+ 5 SYSTEMPATH\CodeIgniter.php(481): CodeIgniter\CodeIgniter->startController()
+ 6 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 7 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 8 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\3F2\\public\\index.php')
+CRITICAL - 2023-09-17 04:00:45 --> Object of class App\Models\MainModel could not be converted to string
+in APPPATH\Controllers\MainController.php on line 23.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->update('55')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\3F2\\public\\index.php')
+CRITICAL - 2023-09-17 04:01:29 --> Object of class App\Models\MainModel could not be converted to string
+in APPPATH\Controllers\MainController.php on line 24.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->update('55')
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\3F2\\public\\index.php')
+CRITICAL - 2023-09-17 04:01:59 --> Too few arguments to function App\Controllers\MainController::save(), 0 passed in C:\laragon\www\3F2\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\MainController.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\3F2\\public\\index.php')
+CRITICAL - 2023-09-17 04:02:47 --> Too few arguments to function App\Controllers\MainController::save(), 0 passed in C:\laragon\www\3F2\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\MainController.php on line 30.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\3F2\\public\\index.php')
+CRITICAL - 2023-09-17 06:44:13 --> Too few arguments to function App\Controllers\MainController::save(), 0 passed in C:\laragon\www\3F2\system\CodeIgniter.php on line 919 and exactly 1 expected
+in APPPATH\Controllers\MainController.php on line 42.
+ 1 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->save()
+ 2 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 3 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 4 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+ 5 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\3F2\\public\\index.php')

@@ -1,0 +1,24 @@
+CRITICAL - 2023-09-22 00:04:58 --> Undefined array key "SectionID"
+in APPPATH\Views\main.php on line 155.
+ 1 APPPATH\Views\main.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "SectionID"', 'C:\\laragon\\www\\3F2\\app\\Views\\main.php', 155)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\3F2\\app\\Views\\main.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('main', [], true)
+ 5 APPPATH\Controllers\MainController.php(71): view('main', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->test()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\3F2\\public\\index.php')
+CRITICAL - 2023-09-22 00:05:41 --> Undefined array key "Section"
+in APPPATH\Views\main.php on line 155.
+ 1 APPPATH\Views\main.php(155): CodeIgniter\Debug\Exceptions->errorHandler(2, 'Undefined array key "Section"', 'C:\\laragon\\www\\3F2\\app\\Views\\main.php', 155)
+ 2 SYSTEMPATH\View\View.php(226): include('C:\\laragon\\www\\3F2\\app\\Views\\main.php')
+ 3 SYSTEMPATH\View\View.php(229): CodeIgniter\View\View->CodeIgniter\View\{closure}()
+ 4 SYSTEMPATH\Common.php(1188): CodeIgniter\View\View->render('main', [], true)
+ 5 APPPATH\Controllers\MainController.php(71): view('main', [...])
+ 6 SYSTEMPATH\CodeIgniter.php(919): App\Controllers\MainController->test()
+ 7 SYSTEMPATH\CodeIgniter.php(494): CodeIgniter\CodeIgniter->runController(Object(App\Controllers\MainController))
+ 8 SYSTEMPATH\CodeIgniter.php(353): CodeIgniter\CodeIgniter->handleRequest(null, Object(Config\Cache), false)
+ 9 FCPATH\index.php(79): CodeIgniter\CodeIgniter->run()
+10 SYSTEMPATH\Commands\Server\rewrite.php(47): require_once('C:\\laragon\\www\\3F2\\public\\index.php')
