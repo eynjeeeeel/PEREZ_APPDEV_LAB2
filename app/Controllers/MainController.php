@@ -6,13 +6,13 @@ use App\Controllers\BaseController;
 
 class MainController extends BaseController
 {
-    private $playlist;
+    private $playlists;
     private $song;
 
 
     public function __construct()
     {
-        $this->playlist = new \App\Models\MainModel1();
+        $this->playlists = new \App\Models\MainModel1();
         $this->song = new \App\Models\MainModel();
     }
     public function index()
@@ -22,7 +22,7 @@ class MainController extends BaseController
     public function view()
     {
         $data = [
-            'playlist' => $this->playlist->findAll(),
+            'playlists' => $this->playlists->findAll(),
             'song' => $this->song->findAll(),
 
         ];
@@ -35,8 +35,8 @@ class MainController extends BaseController
             'name' => $this->request->getVar('pname'),
         ];
 
-        $this->playlist->save($data);
-        return redirect()->to('/main');
+        $this->playlists->save($data);
+        return redirect()->to('/view');
     }
 
     public function addsong()
@@ -58,7 +58,7 @@ class MainController extends BaseController
                 //make sure tama names ng collumns
             ];
             $this->song->insert($data);
-            return redirect()->to('/main');
+            return redirect()->to('/view');
         } else {
             $data['validation'] = $this->validator;
             echo "error";
