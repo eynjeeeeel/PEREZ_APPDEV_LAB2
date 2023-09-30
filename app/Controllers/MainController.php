@@ -8,7 +8,7 @@ class MainController extends BaseController
 {
     private $music;
     private $spotifyplaylist;
-    private $track;
+    private $playlistmusictracker;
     private $db;
 
     public function index()
@@ -20,7 +20,7 @@ class MainController extends BaseController
     {
         $this->music = new \App\Models\MainModel();
         $this->spotifyplaylist = new \App\Models\MainModel1();
-        $this->track = new \App\Models\MainModelPM();
+        $this->playlistmusictracker = new \App\Models\MainModelPM();
         $this->db = \Config\Database::connect();
         helper('form');
     }
@@ -62,7 +62,7 @@ class MainController extends BaseController
 
     if ($this->validate($tuntunin)) {
         if ($file->isValid() && !$file->hasMoved()) {
-            if ($file->move(FCPATH . 'uploads\songs', $newFileName)) {
+            if ($file->move(FCPATH . 'public/uploads', $newFileName)) {
                 
                 $this->music->save($data);
                 echo 'File uploaded successfully';
@@ -90,7 +90,7 @@ class MainController extends BaseController
             'music_id' => $musicID
         ];
 
-        $this->track->insert($data);
+        $this->playlistmusictracker->insert($data);
 
         return redirect()->to('/view');
     }
@@ -98,7 +98,7 @@ class MainController extends BaseController
     public function removeFromPlaylist($musicID)
     {
 
-        $builder = $this->db->table('track');
+        $builder = $this->db->table('playlistmusictracker');
         $builder->where('id', $musicID);
         $builder->delete();
 
@@ -122,7 +122,7 @@ class MainController extends BaseController
 
         if ($playlist) {
 
-            $this->track->where('playlist_id', $playlistID)->delete();
+            $this->playlistmusictracker->where('playlist_id', $playlistID)->delete();
 
             $this->spotifyplaylist->delete($playlistID);
         }
@@ -135,13 +135,13 @@ class MainController extends BaseController
     {
         $context = 'playlist';
 
-        $builder = $this->db->table('track');
+        $builder = $this->db->table('playlistmusictracker');
 
-        $builder->select('track.id, music.*');
+        $builder->select('playlistmusictracker.id, music.*');
 
-        $builder->join('music', 'music.music_id = track.music_id');
+        $builder->join('music', 'music.music_id = playlistmusictracker.music_id');
 
-        $builder->where('track.playlist_id', $playlistID);
+        $builder->where('playlistmusictracker.playlist_id', $playlistID);
 
         $musicInPlaylist = $builder->get()->getResultArray();
 
@@ -169,8 +169,8 @@ class MainController extends BaseController
             // Search songs in the current playlist
             $playlistID = $this->request->getGet('playlistID');
             $builder
-                ->join('track', 'track.music_id = music.music_id')
-                ->where('track.playlist_id', $playlistID)
+                ->join('playlistmusictracker', 'playlistmusictracker.music_id = music.music_id')
+                ->where('playlistmusictracker.playlist_id', $playlistID)
                 ->like('music.title', $searchTerm.'%');
         } else {
             
