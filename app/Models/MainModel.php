@@ -13,7 +13,7 @@ class MainModel extends Model
     protected $returnType       = 'array';
     protected $useSoftDeletes   = false;
     protected $protectFields    = true;
-    protected $allowedFields    = ['title','artist', 'file_path'];
+    protected $allowedFields    = [	'title','artist','file_path','duration','album','genre','created_at'];
 
     // Dates
     protected $useTimestamps = false;
