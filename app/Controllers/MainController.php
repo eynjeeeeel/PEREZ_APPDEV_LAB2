@@ -18,8 +18,8 @@ class MainController extends BaseController
 
     public function __construct()
     {
-        $this->music = new \App\Models\MainModel();
-        $this->spotifyplaylist = new \App\Models\MainModel1();
+        $this->music = new \App\Models\MainModel1();
+        $this->spotifyplaylist = new \App\Models\MainModel();
         $this->playlistmusictracker = new \App\Models\MainModelPM();
         $this->db = \Config\Database::connect();
         helper('form');

@@ -9,7 +9,7 @@
             <div class="modal-body">
                 <div class="row">
                     <div class="col-md-12">
-                        <?php foreach ($playlistmusicsong as $playlist): ?>
+                        <?php foreach ($playlistmusictracker as $playlist): ?>
                             <div class="playlist-item d-flex justify-content-between align-items-center mb-3">
                                 <a href="/playlist/<?= $playlist['playlist_id'] ?>?playlistID=<?= $playlist['playlist_id'] ?>"
                                     class="playlist-link">
