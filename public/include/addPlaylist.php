@@ -14,7 +14,7 @@
                     <div class="mb-3">
                         <label for="playlistSelect" class="form-label">Select Playlist</label>
                         <select name="playlist" class="form-select">
-                            <?php foreach ($playlistmusicsong as $playlist): ?>
+                            <?php foreach ($spotifyplaylist as $playlist): ?>
                                 <option value="<?= $playlist['playlist_id'] ?>">
                                     <?= $playlist['name'] ?>
                                 </option>
